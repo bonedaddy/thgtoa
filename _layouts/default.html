@@ -66,6 +66,11 @@
   top: -10px;
 }
 
+.jswarning {
+  display: inline-block;
+  border: 1px solid green;
+}
+
 .theme-switch-wrapper span {
   margin-right: 2px;
 }
@@ -147,7 +152,7 @@ input:checked + .slider::before {
 			<h1>{{ site.title | default: site.github.repository_name }}</h1>
         </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-		<h4 class="project-version">Latest Version: v0.9.9. See <a href="{{ site.github.changelog_url }}" style="color:#ff4700">Changelog.</a></h4> 
+		<h4 class="project-version">Latest Version is v0.9.9, see the <a href="{{ site.github.changelog_url }}" style="color:#ff4700">changelog</a></h4>
         <section id="downloads">
 			{% if page.url != "/" %}
 				<a href="{{ site.github.home_url }}" class="btn">Home</a>
@@ -164,6 +169,7 @@ input:checked + .slider::before {
 				<a rel="me" href="{{ site.github.mastodon_url }}" target="_blank" class="btn">Mastodon</a>
         </section>
 		<h5>GPG Key Fingerprint: EB16 B6AB 4AB7 BA61 F33E  2DFD 0051 E9A5 89DA B601</h5>
+		<noscript><p class="jswarning">JavaScript required to toggle dark/light modes. JavaScript is not used for any other purpose.</p></noscript>
       </div>
     </header>
     <div class="container">
